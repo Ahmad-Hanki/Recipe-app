@@ -11,3 +11,9 @@ backend/.next/
 backend/out/
 front/.next/
 front/out/
+
+# Optional: other build or debug files
+backend/build/
+front/build/
+backend/.DS_Store
+front/.DS_Store
