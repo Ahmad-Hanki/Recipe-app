@@ -1,20 +1,13 @@
-# Dependencies
-/backend/node_modules/
-/backend/.pnp
-/backend/.pnp.js
-/backend/.yarn/install-state.gz
+# Node modules
+backend/node_modules/
+front/node_modules/
 
-/front/node_modules/
-/front/.pnp
-/front/.pnp.js
-/front/.yarn/install-state.gz
+# Environment files
+backend/.env*
+front/.env*
 
-# Local env files
-/backend/.env*
-/front/.env*
-
-# Next.js build
-/backend/.next/
-/backend/out/
-/front/.next/
-/front/out/
+# Next.js build folders
+backend/.next/
+backend/out/
+front/.next/
+front/out/
