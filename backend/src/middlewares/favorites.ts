@@ -1,8 +1,7 @@
 import { Request, Response } from "express";
 import { db } from "../config/db.js";
-import { favoritesTable } from "../db/schema";
+import { favoritesTable } from "../db/schema.js";
 import { and, eq } from "drizzle-orm";
-
 
 export const getFavorites = async (req: Request, res: Response) => {
   try {
@@ -23,7 +22,6 @@ export const getFavorites = async (req: Request, res: Response) => {
     return res.status(500).json({ error: "Internal Server Error" });
   }
 };
-
 
 export const addToFavorite = async (req: Request, res: Response) => {
   try {

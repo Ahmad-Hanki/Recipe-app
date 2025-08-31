@@ -1,4 +1,4 @@
-import { addToFavorite, deleteFavorite, getFavorites, } from "../middlewares/favorites";
+import { addToFavorite, deleteFavorite, getFavorites, } from "../middlewares/favorites.js";
 import { Router } from "express";
 const router = Router();
 router.get("/favorites/:userId", getFavorites);

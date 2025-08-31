@@ -2,7 +2,7 @@ import {
   addToFavorite,
   deleteFavorite,
   getFavorites,
-} from "../middlewares/favorites";
+} from "../middlewares/favorites.js";
 import { Router } from "express";
 const router = Router();
 
