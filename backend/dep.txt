@@ -1,0 +1,2 @@
+npm i express @neondatabase/serverless cors dotenv drizzle-orm cron 
+npm i nodemon -D
