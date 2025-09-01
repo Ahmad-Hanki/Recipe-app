@@ -1,19 +1,19 @@
 # Node modules
 /backend/node_modules/
-/front/node_modules/
+/mobile/node_modules/
 
 # Environment files
 backend/.env*
-front/.env*
+mobile/.env*
 
 # Next.js build folders
 backend/.next/
 backend/out/
-front/.next/
-front/out/
+mobile/.next/
+mobile/out/
 
 # Optional: other build or debug files
 backend/build/
-front/build/
+mobile/build/
 backend/.DS_Store
-front/.DS_Store
+mobile/.DS_Store
