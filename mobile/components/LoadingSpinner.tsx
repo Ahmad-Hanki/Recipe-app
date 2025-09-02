@@ -3,7 +3,7 @@ import { COLORS } from "../constants/colors";
 
 export default function LoadingSpinner({
   message = "Loading...",
-  size = "large",
+  size = "large" as "small" | "large",
 }) {
   return (
     <View style={styles.container}>

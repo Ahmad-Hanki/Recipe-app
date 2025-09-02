@@ -114,7 +114,7 @@ export const homeStyles = StyleSheet.create({
   },
   row: {
     justifyContent: "space-between",
-    gap: 16,
+    gap: 1,
   },
   emptyState: {
     alignItems: "center",
@@ -181,6 +181,7 @@ export const homeStyles = StyleSheet.create({
     fontWeight: "600",
     color: COLORS.text,
     textAlign: "center",
+    width: 80,
   },
   selectedCategoryText: {
     color: COLORS.white,

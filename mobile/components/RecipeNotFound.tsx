@@ -1,7 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
-import { LinearGradient } from "expo-linear-gradient";
 import { Text, TouchableOpacity, View } from "react-native";
-import { recipeDetailStyles } from "../assets/styles/recipe-detail.styles";
+import { recipeDetailStyles } from "@/assets/styles/recipeDetail.styles";
 import { COLORS } from "../constants/colors";
 import { useRouter } from "expo-router";
 

@@ -1,8 +1,9 @@
 import { useRouter } from "expo-router";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { COLORS } from "@/constants/colors";
 import { favoritesStyles } from "@/assets/styles/favorites.styles";
+import { StyleSheet, Dimensions } from "react-native";
+import { COLORS } from "../constants/colors";
 
 function NoFavoritesFound() {
   const router = useRouter();
@@ -25,9 +26,6 @@ function NoFavoritesFound() {
 }
 
 export default NoFavoritesFound;
-recipe - detail.styles.js;
-import { StyleSheet, Dimensions } from "react-native";
-import { COLORS } from "../constants/colors";
 
 const { height } = Dimensions.get("window");
 

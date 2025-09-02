@@ -5,7 +5,7 @@ import { useRouter } from "expo-router";
 import { COLORS } from "../constants/colors";
 import { recipeCardStyles } from "../assets/styles/home.styles";
 
-export default function RecipeCard({ recipe }) {
+export default function RecipeCard({ recipe }: { recipe: any }) {
   const router = useRouter();
 
   return (
