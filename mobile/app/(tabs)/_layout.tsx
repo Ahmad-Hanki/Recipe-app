@@ -5,7 +5,7 @@ import { Redirect, Stack, Tabs } from "expo-router";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
-const Layout = () => {
+export default function Layout() {
   const { isSignedIn } = useAuth();
 
   if (!isSignedIn) {
@@ -69,6 +69,4 @@ const Layout = () => {
       />
     </Tabs>
   );
-};
-
-export default Layout;
+}

@@ -15,9 +15,12 @@ import { WebView } from "react-native-webview";
 import { LinearGradient } from "expo-linear-gradient";
 
 import React from "react";
+import { usePushNotifications } from "@/hooks/usePushNotifications";
 
 const RecipeIdScreen = () => {
   const { id: recipeId } = useLocalSearchParams();
+  const { expoPushToken, notification, scheduleNotification } =
+    usePushNotifications();
 
   const router = useRouter();
 
@@ -75,6 +78,12 @@ const RecipeIdScreen = () => {
 
   const handleToggleSave = async () => {
     setIsSaving(true);
+    await scheduleNotification(
+      "Hello! 📬",
+      "This is a test notification",
+      { extraData: "123" },
+      2 // delay in seconds
+    );
 
     try {
       if (isSaved) {
