@@ -97,7 +97,7 @@ const HomeScreen = () => {
     return <LoadingSpinner message="Loading delicions recipes..." />;
 
   return (
-    <View  style={homeStyles.container}>
+    <View style={homeStyles.container}>
       <ScrollView
         showsVerticalScrollIndicator={false}
         refreshControl={
@@ -140,7 +140,12 @@ const HomeScreen = () => {
             <TouchableOpacity
               style={homeStyles.featuredCard}
               activeOpacity={0.9}
-              onPress={() => router.push(`/recipe/${featuredRecipe?.id}`)}
+              onPress={() =>
+                router.push({
+                  pathname: "/recipe/[id]",
+                  params: { id: featuredRecipe?.id },
+                })
+              }
             >
               <View style={homeStyles.featuredImageContainer}>
                 <Image
@@ -221,7 +226,6 @@ const HomeScreen = () => {
               numColumns={2}
               columnWrapperStyle={homeStyles.row}
               contentContainerStyle={homeStyles.recipesGrid}
-              
               scrollEnabled={true}
               // ListEmptyComponent={}
             />
